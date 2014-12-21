@@ -1,12 +1,32 @@
-xmas
-====
 
-minetest xmas tree mod
+                           Happy Xmas
+                           xmas
+               *           by: crazyginger72 (Ginger Pollard)
+              / \          ver: 1.0 2014
+             / o \         
+            /o    \        This mod is for a special person
+           /    o  \       to me, **shadowzone** 
+          / o      o\
+         /    o   o  \     screenshot: http://i.imgur.com/JuO6kgr.jpg
+        / o  o      o \
+	   /o      o   o   \
+      --------| |--------
+              | |
+
+xmas, this it a mod for minetest/freeminer/minetime that grows a decorated 24 node (72m) 
+tree, it is perfect for that holiday theme!  
+
+Balls are set to mesh but as a fallback they will be shown as wool nodes only if
+your version isnt compatiably wiht mesh nodes!
+
+to remove tree just dig the trunk, all balls and leaves are set up foe leafdecay.
+Note thet due to the size leafdecay will lag the game/server a bit till it is all
+gone away. also the star drops you your xmas sapling back for the next tree!
 
 
 
 
-
+(c) 2014 Ginger Pollard (gimgerpollard72@gmail.com)
 
 license:
 
