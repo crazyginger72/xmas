@@ -9,7 +9,7 @@
           / o      o\
          /    o   o  \     screenshot: http://i.imgur.com/JuO6kgr.jpg
         / o  o      o \
-	   /o      o   o   \
+       /o      o   o   \
       --------| |--------
               | |
 
