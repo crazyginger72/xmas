@@ -2,7 +2,7 @@
                            Happy Xmas
                            xmas
                *           by: crazyginger72 (Ginger Pollard)
-              / \          ver: 1.0 2014
+              / \          ver: 1.1 2014
              / o \         
             /o    \        This mod is for a special person
            /    o  \       to me, **shadowzone** 
