@@ -8,7 +8,7 @@
            /    o  \       to me, **shadowzone** 
           / o      o\
          /    o   o  \     screenshot: http://i.imgur.com/JuO6kgr.jpg
-        / o  o      o \
+        / o  o      o \    link: https://github.com/crazyginger72/xmas
        /o      o   o   \
       --------| |--------
               | |
@@ -44,3 +44,11 @@ non-profit server clause: The contents of this mod MAY be used
 on any server or in such settings as provided that the use of 
 said server or other setting does not charge a fee or demand 
 any other forms of financial restitutions or exchanges.
+
+promotional clause: This content may be distributed on any type of
+media if said media is used for promoting open-source software even
+if said promotional media is attatched to a non-fre and or 
+for-profit type of media as long as the origonal content is left 
+intact, content is acredited to author and a link is provided to 
+the origional work. 
+

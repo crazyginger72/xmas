@@ -24,19 +24,18 @@ function grow_tree(data, a, pos)
     for yindex = 3, 24 do
     for xindex = -12, 12 do
     for zindex = -12, 12 do
+    	local chance = 7+(yindex/3)
         if a:contains(x+xindex, y+yindex, z+zindex) and math.abs(xindex) <= (23-yindex)/2 and math.abs(zindex) <= (23-yindex)/2 then
             local vi = a:index(x+xindex, y+yindex, z+zindex)
             if data[vi] == (c_air or c_ignore) and math.abs(xindex)+math.abs(zindex) <= (23-yindex)/1.25 then
-                if math.random(100) <=100 then
-                    if (math.abs(xindex) == (23-yindex)/2 or math.abs(zindex) == (23-yindex)/2) and math.random(1, 100) <=  16 and yindex < 21 then
-                        local c_ball = minetest.get_content_id("xmas:ball_"..math.random(1,4)) 
-                        data[vi] = c_ball
+                if (math.abs(xindex) == (23-yindex)/2 or math.abs(zindex) == (23-yindex)/2) and math.random(1, 100) <=  chance and yindex < 21 then
+                    local c_ball = minetest.get_content_id("xmas:ball_"..math.random(1,4)) 
+                    data[vi] = c_ball
+                else
+                    if math.random(1, 100) <= chance+3 then
+                        data[vi] = c_lights
                     else
-                        if math.random(1, 100) <= 20 then
-                            data[vi] = c_lights
-                        else
-                            data[vi] = c_leaves
-                        end
+                        data[vi] = c_leaves
                     end
                 end
             end
