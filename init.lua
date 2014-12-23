@@ -4,6 +4,7 @@ function grow_tree(data, a, pos)
     local c_ignore = minetest.get_content_id("ignore")
     local c_tree = minetest.get_content_id("default:tree")
     local c_leaves = minetest.get_content_id("xmas:leaves") 
+    local c_lights = minetest.get_content_id("xmas:leaves_lit") 
     local c_star = minetest.get_content_id("xmas:star")   
     local x, y, z = pos.x, pos.y, pos.z
     for yy = y, y+18 do
@@ -31,7 +32,11 @@ function grow_tree(data, a, pos)
                         local c_ball = minetest.get_content_id("xmas:ball_"..math.random(1,4)) 
                         data[vi] = c_ball
                     else
-                        data[vi] = c_leaves
+                        if math.random(1, 100) <= 20 then
+                            data[vi] = c_lights
+                        else
+                            data[vi] = c_leaves
+                        end
                     end
                 end
             end
@@ -77,11 +82,28 @@ minetest.register_node("xmas:sapling", {
 })
 
 minetest.register_node("xmas:leaves", {
-    description = "Jungle Leaves",
+    description = "Leaves",
     drawtype = "plantlike",
     visual_scale = 1.5,
     tiles = {"xmas_leaves.png"},
     paramtype = "light",
+    waving = 1,
+    buildable_to = true,
+    walkable = false,
+    climbable = true,
+    is_ground_content = false,
+    groups = {snappy=3,leafdecay=13,flammable=2,not_in_creative_inventory=1},
+    drop = "",
+    sounds = default.node_sound_leaves_defaults(),
+})
+
+minetest.register_node("xmas:leaves_lit", {
+    description = "Leaves",
+    drawtype = "plantlike",
+    visual_scale = 1.5,
+    tiles = {"xmas_leaves.png^xmas_lights.png"},
+    paramtype = "light",
+    light_source = 14,
     waving = 1,
     buildable_to = true,
     walkable = false,
